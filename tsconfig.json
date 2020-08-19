@@ -1,27 +1,20 @@
 {
   "compilerOptions": {
-    "target": "es5",
+    "target": "es2018",
     "module": "commonjs",
     "outDir": "./dist",
-    "rootDir": "./src",
+    "rootDir": ".",
     "strict": true,
     "strictPropertyInitialization": false,
     "baseUrl": "./src",
     "allowJs": true,
     "paths": {
-      "@modules/*": ["modules/*"],
-      "@config/*": ["config/*"],
-      "@shared/*": ["shared/*"]
+      "@src/*": ["src/*"]
     },
     "esModuleInterop": true,
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
     "forceConsistentCasingInFileNames": true
   },
-  "exclude": [
-    "commitlint.config.js",
-    "coverage",
-    "jest.config.js",
-    "prettier.config.js"
-  ]
+  "exclude": ["commitlint.config.js", "prettier.config.js"]
 }

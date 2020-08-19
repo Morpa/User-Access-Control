@@ -1,8 +1,7 @@
 {
   "env": {
     "es6": true,
-    "node": true,
-    "jest": true
+    "node": true
   },
   "extends": [
     "airbnb-base",
@@ -21,6 +20,8 @@
   },
   "plugins": ["@typescript-eslint", "prettier", "eslint-plugin-import-helpers"],
   "rules": {
+    "camelcase": "off",
+    "import/prefer-default-export": "off",
     "prettier/prettier": "error",
     "@typescript-eslint/camelcase": "off",
     "no-useless-constructor": "off",
@@ -30,10 +31,6 @@
       {
         "argsIgnorePattern": "_"
       }
-    ],
-    "@typescript-eslint/interface-name-prefix": [
-      "error",
-      { "prefixWithI": "always" }
     ],
     "import/extensions": [
       "error",
